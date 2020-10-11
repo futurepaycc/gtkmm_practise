@@ -126,7 +126,7 @@ int main(int argc, char** argv) {
     auto app = Gtk::Application::create(argc, argv, "app_id");
 
     Gtk::Window window;
-    window.set_title("小商钟");
+    window.set_title("小闹钟");
     window.set_default_size(800,800);
 
     Clock clock;
