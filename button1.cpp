@@ -15,7 +15,7 @@ int main(int argc,char *argv[]) {
 
     Gtk::Button button("test1");
     // button.signal_clicked().connect(sigc::ptr_fun(&clicked));
-    button.signal_clicked().connect([&window,&button]{
+    button.signal_clicked().connect([&]{
         cout<<"clicked ..."<<endl;
         window.resize(200,300);
         button.set_label("test again");
