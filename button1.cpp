@@ -1,10 +1,8 @@
-#include <gtkmm.h>
-#include <iostream>
+#include <mygtkmm.h>
 
 using namespace std;
 
 void clicked() { std::cout << "hello" << std::endl; }
-
 
 /* 
 使用lamda代替sigc

@@ -1,11 +1,16 @@
-#include <goocanvasmm.h>
-#include <gtkmm.h>
+// #include <gtkmm.h>
+// #include <iostream>
+#include <mygtkmm.h>
 
-#include <iostream>
+#include <goocanvasmm.h>
 #include <sstream>
 
 /* 
 goocanvasmm质量很差，不可用
+单独构建，不然会影响其他文件(包含)
+g++ -g `pkg-config --cflags-only-I --libs gtkmm-3.0` `pkg-config --cflags --libs webkit2gtk-4.0` `pkg-config --cflags --libs goocanvasmm-2.0` -o bin/goocanvas1
+
+clang++ -include mygtkmm.h -g `pkg-config --cflags-only-I --libs gtkmm-3.0` `pkg-config --cflags --libs webkit2gtk-4.0` `pkg-config --cflags --libs goocanvasmm-2.0` goocanvas1.cpp -o bin/goocanvas1
  */
 
 class ExampleWindow : public Gtk::Window {

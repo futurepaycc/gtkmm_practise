@@ -1,4 +1,13 @@
+/* 
+
+clang++ -g -include mygtkmm.h `pkg-config --cflags-only-I --libs gtkmm-3.0` draw3.cpp -o bin/draw3
+ */
+
 #include <mygtkmm.h>
+// #include <gtkmm/application.h>
+// #include <gtkmm/drawingarea.h>
+// #include <gtkmm/window.h>
+// #include <iostream>
 /*
 signal_draw函数绑定说明：
 https://stackoverflow.com/questions/7771623/segfault-when-creating-smartpointer-on-cairocontext
@@ -29,17 +38,13 @@ bool onKeyPress(GdkEventKey *event) {
 }
 
 int main(int argc, char *argv[]) {
-    Gtk::Main app(argc, argv);
+    auto app = Gtk::Application::create(argc, argv, "小测试");
     Gtk::Window window;
-    Gtk::DrawingArea drawarea;
     window.set_default_size(800, 600);
-
+    Gtk::DrawingArea drawarea;
     drawarea.signal_draw().connect(sigc::bind(sigc::ptr_fun(&draw), &drawarea));
     window.add(drawarea);
     window.show_all();
-
-    window.signal_key_press_event().connect(sigc::ptr_fun(&onKeyPress));
-
-    Gtk::Main::run(window);
-    return 0;
+    window.signal_key_press_event().connect(sigc::ptr_fun(&onKeyPress)); //不用sigc，无法使用事件
+    return app->run(window);
 }

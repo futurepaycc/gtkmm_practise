@@ -1,7 +1,4 @@
-#include <gtkmm/button.h>
-#include <gtkmm/window.h>
-
-#include <iostream>
+#include <mygtkmm.h>
 
 class HelloWorld : public Gtk::Window {
    public:

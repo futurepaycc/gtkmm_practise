@@ -4,9 +4,10 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "recompile",
+        "label": "build",
         "type": "shell",
         "command": "rm -f ${workspaceRoot}/bin/${fileBasenameNoExtension} && make sourcename=${fileBasenameNoExtension}",
+        "problemMatcher": []
       }
     ]
   }

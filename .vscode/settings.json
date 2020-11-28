@@ -2,5 +2,10 @@
     "files.associations": {
         "*.mvl": "html",
         "iosfwd": "cpp"
+    },
+    "code-runner.executorMap": {
+
+        "cpp": "cd $dir/bin && ./$fileNameWithoutExt"
+
     }
 }
