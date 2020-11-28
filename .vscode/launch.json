@@ -5,7 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "cold_debug",
+            "name": "cold_lldb",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "cold_gdb",
             "type": "cppdbg",
             "request": "launch",
             //变量列表: https://code.visualstudio.com/docs/editor/variables-reference
