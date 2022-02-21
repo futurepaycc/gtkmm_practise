@@ -6,7 +6,7 @@
 
 # 带预编译头，有时会出错
 # build = clang++ -g -include mygtkmm.h `pkg-config --cflags-only-I --libs gtkmm-3.0` `pkg-config --cflags --libs webkit2gtk-4.0` `pkg-config --cflags --libs goocanvasmm-2.0`
-build = g++ -g  -I. `pkg-config --cflags-only-I --libs gtkmm-3.0` `pkg-config --cflags --libs webkit2gtk-4.0` `pkg-config --cflags --libs goocanvasmm-2.0` draw1.cpp -o bin/draw1
+build = g++ -g  -I. `pkg-config --cflags-only-I --libs gtkmm-3.0` `pkg-config --cflags --libs webkit2gtk-4.0` `pkg-config --cflags --libs goocanvasmm-2.0`
 
 all:
 	${build} ${sourcename}.cpp -o bin/${sourcename}
