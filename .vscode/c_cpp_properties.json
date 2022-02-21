@@ -65,7 +65,7 @@
                 "/usr/lib/dbus-1.0/include",
                 "/usr/include/webkitgtk-4.0",
                 "/usr/include/libsoup-2.4",
-                "/usr/include/goocanvas-2.0",
+                "/usr/include/goocanvas-3.0",
                 "/usr/include/at-spi-2.0"
             ],
             "defines": [],
