@@ -1,4 +1,4 @@
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 #include <cmath>
 #include <ctime>
 

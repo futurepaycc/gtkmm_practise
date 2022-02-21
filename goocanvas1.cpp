@@ -1,6 +1,6 @@
 // #include <gtkmm.h>
 // #include <iostream>
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 
 #include <goocanvasmm.h>
 #include <sstream>

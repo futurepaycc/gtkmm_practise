@@ -3,7 +3,7 @@
 clang++ -g -include mygtkmm.h `pkg-config --cflags-only-I --libs gtkmm-3.0` draw3.cpp -o bin/draw3
  */
 
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 // #include <gtkmm/application.h>
 // #include <gtkmm/drawingarea.h>
 // #include <gtkmm/window.h>

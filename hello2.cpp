@@ -6,7 +6,7 @@ clang++ -g -include mygtkmm.h `pkg-config --cflags-only-I --libs gtkmm-3.0` hell
 https://www.zybuluo.com/lniwn/note/829707
 */
 
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 
 class HelloWorld : public Gtk::Window {
    public:

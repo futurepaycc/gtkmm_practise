@@ -1,4 +1,4 @@
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 /*
 signal_draw函数绑定说明：
 https://stackoverflow.com/questions/7771623/segfault-when-creating-smartpointer-on-cairocontext
