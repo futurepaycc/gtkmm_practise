@@ -1,4 +1,4 @@
-#include <mygtkmm.h>
+#include "mygtkmm.h"
 
 using namespace std;
 
